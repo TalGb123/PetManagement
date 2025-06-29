@@ -1,0 +1,27 @@
+12-06-2025 14:06:69 [31merror[39m: [31m[USER-SERVICE] Error fetching all users:[39m
+12-06-2025 14:06:33 [31merror[39m: [31m[USER-SERVICE] Error fetching all users:[39m
+12-06-2025 14:06:23 [31merror[39m: [31m[USER-SERVICE] Error fetching all users:[39m
+12-06-2025 14:49:04 [31merror[39m: [31m[USER-SERVICE] Error fetching all users: This is a test error[39m
+12-06-2025 14:51:42 [31merror[39m: [31m[USER-SERVICE] Error fetching all users: This is a test error[39m
+12-06-2025 15:05:35 [31merror[39m: [31m[USER-SERVICE] Error fetching all users: This is a test error message[39m
+12-06-2025 15:05:35 [31merror[39m: [31m[APP] GET / - 500[39m
+12-06-2025 15:22:09 [31merror[39m: [31m[AUTH-SERVICE] Error registering user: Cannot read properties of undefined (reading '$oid')[39m
+12-06-2025 15:22:09 [31merror[39m: [31m[AUTH-CONTROLLER] Error registering user: Cannot read properties of undefined (reading '$oid')[39m
+12-06-2025 15:22:09 [31merror[39m: [31m[APP] POST /register - 500[39m
+12-06-2025 15:28:35 [31merror[39m: [31m[APP] POST /login - 500[39m
+12-06-2025 15:44:57 [31merror[39m: [31m[APP] PUT /68429e430ab9dba0409e78d6 - 500[39m
+12-06-2025 15:47:49 [31merror[39m: [31m[APP] GET /68429e430ab9dba0409e78d6 - 500[39m
+12-06-2025 15:47:52 [31merror[39m: [31m[APP] GET /68429e430ab9dba0409e78d6 - 500[39m
+12-06-2025 15:47:56 [31merror[39m: [31m[APP] GET /68429e430ab9dba0409e78d6 - 500[39m
+12-06-2025 15:47:59 [31merror[39m: [31m[APP] GET /68429e430ab9dba0409e78d6 - 500[39m
+12-06-2025 15:49:59 [31merror[39m: [31m[APP] PUT /68429d90a299396e8a42f76b - 500[39m
+12-06-2025 15:57:23 [31merror[39m: [31m[USER-DAL] Error updating user with ID 68429fa04c012186b66e9960: Cast to ObjectId failed for value "{[39m
+[31m  id: '68429fa04c012186b66e9960',[39m
+[31m  userData: { email: 'rani@gmail.com' }[39m
+[31m}" (type Object) at path "_id" for model "User"[39m
+12-06-2025 15:57:23 [31merror[39m: [31m[USER-SERVICE] Error updating user with ID: 68429fa04c012186b66e9960 - Cast to ObjectId failed for value "{[39m
+[31m  id: '68429fa04c012186b66e9960',[39m
+[31m  userData: { email: 'rani@gmail.com' }[39m
+[31m}" (type Object) at path "_id" for model "User"[39m
+12-06-2025 15:57:23 [31merror[39m: [31m[APP] PUT /68429fa04c012186b66e9960 - 500[39m
+12-06-2025 15:58:36 [31merror[39m: [31m[APP] GET /68429fa04c012186b66e9960 - 500[39m

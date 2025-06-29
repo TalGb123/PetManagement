@@ -1,0 +1,206 @@
+12-06-2025 14:49:04 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 14:49:04 [31merror[39m: [31m[USER-SERVICE] Error fetching all users: This is a test error[39m
+12-06-2025 14:50:31 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 14:51:42 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 14:51:42 [31merror[39m: [31m[USER-SERVICE] Error fetching all users: This is a test error[39m
+12-06-2025 14:51:58 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 14:52:00 [32minfo[39m: [32m[USER-SERVICE] Retrieved 34 users from the database[39m
+12-06-2025 14:52:00 [33mwarn[39m: [33m[USER-SERVICE] This is a test warning message[39m
+12-06-2025 14:55:03 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 14:55:03 [32minfo[39m: [32m[USER-SERVICE] Retrieved 34 users from the database[39m
+12-06-2025 14:55:03 [33mwarn[39m: [33m[USER-SERVICE] This is a test warning message[39m
+12-06-2025 14:55:22 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 14:55:22 [32minfo[39m: [32m[USER-SERVICE] Retrieved 34 users from the database[39m
+12-06-2025 14:55:22 [33mwarn[39m: [33m[USER-SERVICE] This is a test warning message[39m
+12-06-2025 14:55:42 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 14:55:42 [32minfo[39m: [32m[USER-SERVICE] Retrieved 34 users from the database[39m
+12-06-2025 14:55:42 [33mwarn[39m: [33m[USER-SERVICE] This is a test warning message[39m
+12-06-2025 15:00:17 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 15:00:17 [32minfo[39m: [32m[USER-SERVICE] Retrieved 34 users from the database[39m
+12-06-2025 15:00:17 [33mwarn[39m: [33m[USER-SERVICE] This is a test warning message[39m
+12-06-2025 15:04:32 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 15:04:32 [32minfo[39m: [32m[USER-SERVICE] Retrieved 34 users from the database[39m
+12-06-2025 15:04:32 [33mwarn[39m: [33m[USER-SERVICE] This is a test warning message[39m
+12-06-2025 15:05:35 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 15:05:35 [32minfo[39m: [32m[USER-SERVICE] Retrieved 34 users from the database[39m
+12-06-2025 15:05:35 [33mwarn[39m: [33m[USER-SERVICE] This is a test warning message[39m
+12-06-2025 15:05:35 [31merror[39m: [31m[USER-SERVICE] Error fetching all users: This is a test error message[39m
+12-06-2025 15:05:35 [31merror[39m: [31m[APP] GET / - 500[39m
+12-06-2025 15:08:38 [32minfo[39m: [32m[USER-CONTROLLER] Fetching all users[39m
+12-06-2025 15:08:38 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 15:08:38 [32minfo[39m: [32m[USER-DAL] Fetching all users from the database[39m
+12-06-2025 15:08:39 [32minfo[39m: [32m[USER-DAL] Retrieved 34 users[39m
+12-06-2025 15:08:39 [32minfo[39m: [32m[USER-SERVICE] Retrieved 34 users from the database[39m
+12-06-2025 15:08:39 [33mwarn[39m: [33m[USER-SERVICE] This is a test warning message[39m
+12-06-2025 15:08:39 [32minfo[39m: [32m[USER-CONTROLLER] Retrieved 34 users from the database[39m
+12-06-2025 15:16:50 [32minfo[39m: [32m[AUTH-CONTROLLER] Registering new user[39m
+12-06-2025 15:16:50 [33mwarn[39m: [33m[AUTH-CONTROLLER] Missing required fields for user registration[39m
+12-06-2025 15:16:50 [33mwarn[39m: [33m[APP] POST /register - 400[39m
+12-06-2025 15:17:42 [32minfo[39m: [32m[AUTH-CONTROLLER] Registering new user[39m
+12-06-2025 15:17:42 [32minfo[39m: [32m[AUTH-SERVICE] starting to register user undefined[39m
+12-06-2025 15:17:42 [32minfo[39m: [32m[AUTH-SERVICE] hashing password for user registration[39m
+12-06-2025 15:17:42 [32minfo[39m: [32m[AUTH-SERVICE] Password hashed successfully[39m
+12-06-2025 15:17:42 [32minfo[39m: [32m[AUTH-DAL] Starting validaion for user undefined[39m
+12-06-2025 15:17:42 [32minfo[39m: [32m[AUTH-DAL] Saving user to the database[39m
+12-06-2025 15:17:42 [32minfo[39m: [32m[AUTH-SERVICE] User undefined registered successfully[39m
+12-06-2025 15:17:42 [32minfo[39m: [32m[AUTH-SERVICE] Creating token for user undefined[39m
+12-06-2025 15:17:42 [32minfo[39m: [32m[AUTH-SERVICE] Token created successfully for user undefined[39m
+12-06-2025 15:17:42 [32minfo[39m: [32m[AUTH-CONTROLLER] User registered successfully: undefined[39m
+12-06-2025 15:19:35 [32minfo[39m: [32m[AUTH-CONTROLLER] Registering new user[39m
+12-06-2025 15:19:35 [32minfo[39m: [32m[AUTH-SERVICE] starting to register user carlos@ample.com[39m
+12-06-2025 15:19:35 [32minfo[39m: [32m[AUTH-SERVICE] hashing password for user registration[39m
+12-06-2025 15:19:35 [32minfo[39m: [32m[AUTH-SERVICE] Password hashed successfully[39m
+12-06-2025 15:19:35 [32minfo[39m: [32m[AUTH-DAL] Starting validaion for user carlos@ample.com[39m
+12-06-2025 15:19:35 [32minfo[39m: [32m[AUTH-DAL] Saving user to the database[39m
+12-06-2025 15:19:36 [32minfo[39m: [32m[AUTH-DAL] User carlos@ample.com Saved successfully[39m
+12-06-2025 15:19:36 [32minfo[39m: [32m[AUTH-SERVICE] User undefined registered successfully[39m
+12-06-2025 15:19:36 [32minfo[39m: [32m[AUTH-SERVICE] Creating token for user undefined[39m
+12-06-2025 15:19:36 [32minfo[39m: [32m[AUTH-SERVICE] Token created successfully for user undefined[39m
+12-06-2025 15:19:36 [32minfo[39m: [32m[AUTH-CONTROLLER] User registered successfully: undefined[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-CONTROLLER] Registering new user[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-SERVICE] starting to register user carlos@ample.com[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-SERVICE] hashing password for user registration[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-SERVICE] Password hashed successfully[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-DAL] Starting validaion for user carlos@ample.com[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-DAL] Saving user to the database[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-DAL] User carlos@ample.com Saved successfully[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-SERVICE] User undefined registered successfully[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-SERVICE] Creating token for user undefined[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-SERVICE] Token created successfully for user undefined[39m
+12-06-2025 15:21:21 [32minfo[39m: [32m[AUTH-CONTROLLER] User registered successfully: 684ac6415c9273331d017389[39m
+12-06-2025 15:22:09 [32minfo[39m: [32m[AUTH-CONTROLLER] Registering new user[39m
+12-06-2025 15:22:09 [32minfo[39m: [32m[AUTH-SERVICE] starting to register user carlos@ample.com[39m
+12-06-2025 15:22:09 [32minfo[39m: [32m[AUTH-SERVICE] hashing password for user registration[39m
+12-06-2025 15:22:09 [32minfo[39m: [32m[AUTH-SERVICE] Password hashed successfully[39m
+12-06-2025 15:22:09 [32minfo[39m: [32m[AUTH-DAL] Starting validaion for user carlos@ample.com[39m
+12-06-2025 15:22:09 [32minfo[39m: [32m[AUTH-DAL] Saving user to the database[39m
+12-06-2025 15:22:09 [32minfo[39m: [32m[AUTH-DAL] User carlos@ample.com Saved successfully[39m
+12-06-2025 15:22:09 [31merror[39m: [31m[AUTH-SERVICE] Error registering user: Cannot read properties of undefined (reading '$oid')[39m
+12-06-2025 15:22:09 [31merror[39m: [31m[AUTH-CONTROLLER] Error registering user: Cannot read properties of undefined (reading '$oid')[39m
+12-06-2025 15:22:09 [31merror[39m: [31m[APP] POST /register - 500[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-CONTROLLER] Registering new user[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-SERVICE] starting to register user carlos@ample.com[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-SERVICE] hashing password for user registration[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-SERVICE] Password hashed successfully[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-DAL] Starting validaion for user carlos@ample.com[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-DAL] Saving user to the database[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-DAL] User carlos@ample.com Saved successfully[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-SERVICE] User 684ac69c52759c99fb7da269 registered successfully[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-SERVICE] Creating token for user 684ac69c52759c99fb7da269[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-SERVICE] Token created successfully for user undefined[39m
+12-06-2025 15:22:52 [32minfo[39m: [32m[AUTH-CONTROLLER] User registered successfully: 684ac69c52759c99fb7da269[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-CONTROLLER] Registering new user[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-SERVICE] starting to register user carlos@ample.com[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-SERVICE] hashing password for user registration[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-SERVICE] Password hashed successfully[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-DAL] Starting validaion for user carlos@ample.com[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-DAL] Saving user to the database[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-DAL] User carlos@ample.com Saved successfully[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-SERVICE] User 684ac6d1be6d211556612289 registered successfully[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-SERVICE] Creating token for user 684ac6d1be6d211556612289[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-SERVICE] Token created successfully for user undefined[39m
+12-06-2025 15:23:45 [32minfo[39m: [32m[AUTH-CONTROLLER] User registered successfully: 684ac6d1be6d211556612289[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-CONTROLLER] Registering new user[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-SERVICE] starting to register user carlos@ample.com[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-SERVICE] hashing password for user registration[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-SERVICE] Password hashed successfully[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-DAL] Starting validaion for user carlos@ample.com[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-DAL] Saving user to the database[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-DAL] User carlos@ample.com Saved successfully[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-SERVICE] User 684ac706e108862769472d75 registered successfully[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-SERVICE] Creating token for user 684ac706e108862769472d75[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-SERVICE] Token created successfully for user undefined[39m
+12-06-2025 15:24:38 [32minfo[39m: [32m[AUTH-CONTROLLER] User registered successfully: 684ac706e108862769472d75[39m
+12-06-2025 15:28:35 [31merror[39m: [31m[APP] POST /login - 500[39m
+12-06-2025 15:44:11 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429e430ab9dba0409e78d6[39m
+12-06-2025 15:44:57 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429e430ab9dba0409e78d6[39m
+12-06-2025 15:44:57 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429e430ab9dba0409e78d6[39m
+12-06-2025 15:44:57 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429e430ab9dba0409e78d6 updated successfully[39m
+12-06-2025 15:44:57 [32minfo[39m: [32m[USER-DAL] Deleting user with ID: 68429e430ab9dba0409e78d6[39m
+12-06-2025 15:44:57 [32minfo[39m: [32m[USER-DAL] User with ID: 68429e430ab9dba0409e78d6 deleted successfully[39m
+12-06-2025 15:44:57 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429e430ab9dba0409e78d6 deleted successfully[39m
+12-06-2025 15:44:57 [31merror[39m: [31m[APP] PUT /68429e430ab9dba0409e78d6 - 500[39m
+12-06-2025 15:47:40 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429d90a299396e8a42f76b[39m
+12-06-2025 15:47:47 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429e430ab9dba0409e78d6[39m
+12-06-2025 15:47:47 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429e430ab9dba0409e78d6[39m
+12-06-2025 15:47:47 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429e430ab9dba0409e78d6 updated successfully[39m
+12-06-2025 15:47:49 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429e430ab9dba0409e78d6[39m
+12-06-2025 15:47:49 [31merror[39m: [31m[APP] GET /68429e430ab9dba0409e78d6 - 500[39m
+12-06-2025 15:47:52 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429e430ab9dba0409e78d6[39m
+12-06-2025 15:47:52 [31merror[39m: [31m[APP] GET /68429e430ab9dba0409e78d6 - 500[39m
+12-06-2025 15:47:55 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429e430ab9dba0409e78d6[39m
+12-06-2025 15:47:56 [31merror[39m: [31m[APP] GET /68429e430ab9dba0409e78d6 - 500[39m
+12-06-2025 15:47:59 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429e430ab9dba0409e78d6[39m
+12-06-2025 15:47:59 [31merror[39m: [31m[APP] GET /68429e430ab9dba0409e78d6 - 500[39m
+12-06-2025 15:48:03 [32minfo[39m: [32m[USER-CONTROLLER] Fetching all users[39m
+12-06-2025 15:48:03 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 15:48:03 [32minfo[39m: [32m[USER-DAL] Fetching all users from the database[39m
+12-06-2025 15:48:03 [32minfo[39m: [32m[USER-DAL] Retrieved 34 users[39m
+12-06-2025 15:48:03 [32minfo[39m: [32m[USER-SERVICE] Retrieved 34 users from the database[39m
+12-06-2025 15:48:03 [33mwarn[39m: [33m[USER-SERVICE] This is a test warning message[39m
+12-06-2025 15:48:03 [32minfo[39m: [32m[USER-CONTROLLER] Retrieved 34 users from the database[39m
+12-06-2025 15:48:08 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429d90a299396e8a42f76b[39m
+12-06-2025 15:48:34 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429d90a299396e8a42f76b[39m
+12-06-2025 15:49:01 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429d90a299396e8a42f76b[39m
+12-06-2025 15:49:01 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429d90a299396e8a42f76b[39m
+12-06-2025 15:49:01 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429d90a299396e8a42f76b updated successfully[39m
+12-06-2025 15:49:21 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429d90a299396e8a42f76b[39m
+12-06-2025 15:49:54 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429d90a299396e8a42f76b[39m
+12-06-2025 15:49:58 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429d90a299396e8a42f76b[39m
+12-06-2025 15:49:58 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429d90a299396e8a42f76b[39m
+12-06-2025 15:49:58 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429d90a299396e8a42f76b updated successfully[39m
+12-06-2025 15:49:58 [32minfo[39m: [32m[USER-DAL] Deleting user with ID: 68429d90a299396e8a42f76b[39m
+12-06-2025 15:49:58 [32minfo[39m: [32m[USER-DAL] User with ID: 68429d90a299396e8a42f76b deleted successfully[39m
+12-06-2025 15:49:58 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429d90a299396e8a42f76b deleted successfully[39m
+12-06-2025 15:49:59 [31merror[39m: [31m[APP] PUT /68429d90a299396e8a42f76b - 500[39m
+12-06-2025 15:53:04 [32minfo[39m: [32m[USER-CONTROLLER] Fetching all users[39m
+12-06-2025 15:53:04 [32minfo[39m: [32m[USER-SERVICE] Fetching all users[39m
+12-06-2025 15:53:04 [32minfo[39m: [32m[USER-DAL] Fetching all users from the database[39m
+12-06-2025 15:53:04 [32minfo[39m: [32m[USER-DAL] Retrieved 33 users[39m
+12-06-2025 15:53:04 [32minfo[39m: [32m[USER-SERVICE] Retrieved 33 users from the database[39m
+12-06-2025 15:53:04 [33mwarn[39m: [33m[USER-SERVICE] This is a test warning message[39m
+12-06-2025 15:53:04 [32minfo[39m: [32m[USER-CONTROLLER] Retrieved 33 users from the database[39m
+12-06-2025 15:53:22 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:53:22 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:53:22 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429fa04c012186b66e9960 updated successfully[39m
+12-06-2025 15:53:37 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:53:37 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:53:37 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429fa04c012186b66e9960 updated successfully[39m
+12-06-2025 15:54:30 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:54:30 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:54:30 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429fa04c012186b66e9960 updated successfully[39m
+12-06-2025 15:54:31 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:54:31 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:54:31 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429fa04c012186b66e9960 updated successfully[39m
+12-06-2025 15:55:14 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:55:14 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:55:14 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429fa04c012186b66e9960 updated successfully[39m
+12-06-2025 15:55:15 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:55:15 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:55:15 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429fa04c012186b66e9960 updated successfully[39m
+12-06-2025 15:55:36 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:55:36 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:55:36 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429fa04c012186b66e9960 updated successfully[39m
+12-06-2025 15:57:23 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:57:23 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:57:23 [31merror[39m: [31m[USER-DAL] Error updating user with ID 68429fa04c012186b66e9960: Cast to ObjectId failed for value "{[39m
+[31m  id: '68429fa04c012186b66e9960',[39m
+[31m  userData: { email: 'rani@gmail.com' }[39m
+[31m}" (type Object) at path "_id" for model "User"[39m
+12-06-2025 15:57:23 [31merror[39m: [31m[USER-SERVICE] Error updating user with ID: 68429fa04c012186b66e9960 - Cast to ObjectId failed for value "{[39m
+[31m  id: '68429fa04c012186b66e9960',[39m
+[31m  userData: { email: 'rani@gmail.com' }[39m
+[31m}" (type Object) at path "_id" for model "User"[39m
+12-06-2025 15:57:23 [31merror[39m: [31m[APP] PUT /68429fa04c012186b66e9960 - 500[39m
+12-06-2025 15:58:02 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:58:02 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:58:02 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429fa04c012186b66e9960 updated successfully[39m
+12-06-2025 15:58:17 [32minfo[39m: [32m[USER-CONTROLLER] Performing action PUT on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:58:17 [32minfo[39m: [32m[USER-SERVICE] Updating user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:58:17 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429fa04c012186b66e9960 updated successfully[39m
+12-06-2025 15:58:31 [32minfo[39m: [32m[USER-CONTROLLER] Performing action DELETE on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:58:31 [32minfo[39m: [32m[USER-DAL] Deleting user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:58:31 [32minfo[39m: [32m[USER-DAL] User with ID: 68429fa04c012186b66e9960 deleted successfully[39m
+12-06-2025 15:58:31 [32minfo[39m: [32m[USER-SERVICE] User with ID: 68429fa04c012186b66e9960 deleted successfully[39m
+12-06-2025 15:58:36 [32minfo[39m: [32m[USER-CONTROLLER] Performing action GET on user with ID: 68429fa04c012186b66e9960[39m
+12-06-2025 15:58:36 [31merror[39m: [31m[APP] GET /68429fa04c012186b66e9960 - 500[39m
