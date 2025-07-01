@@ -57,8 +57,10 @@ export const userService = {
     updateUserById: async (id, userData) => {
         try {
             logger.info(`Updating user with ID: ${id}`);
+            logger.debug(`User data to update: ${JSON.stringify(userData)}`);
             const updatedUser = await userDal.updateUserById(id, userData);
             logger.info(`User with ID: ${id} updated successfully`);
+            logger.debug(`Updated user data: ${JSON.stringify(updatedUser)}`);
             return {
                 URL: `${API_URL}/${id}`,
                 message: `Updated user by id:${id}`,
