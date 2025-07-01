@@ -21,13 +21,7 @@ app.use((req, res, next) => {
     next();
 })
 
+app.use ('/uploads', express.static('uploads'))
+app.use("/api", routes);
 
-app.use("/api", routes)
-
-export default app
-
-
-
-
-
-
+export default app;
