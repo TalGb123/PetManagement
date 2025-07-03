@@ -1,13 +1,12 @@
-import { api_key } from '../config/index.js'
 import { getPetfinderToken } from '../utils/token.js'
 const apiUrl = "https://api.petfinder.com/v2/"
 
 const formatBreeds = (breeds) => {
-        if (breeds.unknown) return "Unknown Breed";
-        if (!breeds.mixed) return breeds.primary;
-        if (breeds.secondary) return `${breeds.primary} / ${breeds.secondary}`;
-        return "Mixed Breed";
-    };
+    if (breeds.unknown) return "Unknown Breed";
+    if (!breeds.mixed) return breeds.primary;
+    if (breeds.secondary) return `${breeds.primary} / ${breeds.secondary}`;
+    return "Mixed Breed";
+};
 
 const formatColors = (colors) => {
     const { primary, secondary, tertiary } = colors;
