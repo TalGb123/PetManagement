@@ -1,7 +1,7 @@
 import { userDal } from "../dal/user.dal.js";
-import { weatherService } from './weather.service.js'
 import { dateTimeFormater_il } from "../utils/dateTimeFormater_il.js";
 import { createLogger } from "../utils/logger.js";
+import { getAllAnimals } from "../models/animal.model.js";
 
 
 const API_URL = "http://localhost:5000/api/users"
@@ -28,31 +28,32 @@ export const userService = {
         }
     },
     getUserById: async (id) => {
-        try {
-            console.log('Fetching user for id ', id);
-            const user = await userDal.getUserById(id)
-            console.log(`User found`, user);
+    try {
+        console.log('Fetching user for id ', id);
+        const user = await userDal.getUserById(id);
+        if (!user) throw new Error("User not found");
 
-            let userWeather = {};
-            try {
-                userWeather = await weatherService.getWeatherByCity(user.city) || {}
-            } catch (error) {
-                console.error(`Error fetching weather for user ${user.name}:`, error);
-            }
-            let formatedUser = user.toObject();
-
+        // Format timestamps if needed
+        const formatedUser = { ...user };
+        if (user.createdAt)
             formatedUser.createdAt = dateTimeFormater_il.formatDateTime(user.createdAt);
+        if (user.updatedAt)
             formatedUser.updatedAt = dateTimeFormater_il.formatDateTime(user.updatedAt);
 
-            return {
-                URL: `${API_URL}/${id}`,
-                message: `fetched user by id:${id}`,
-                user: formatedUser,
-                weather: userWeather.data || {},
-            };
-        } catch (error) {
-            throw error
-        }
+        // Get pets by matching pet_ids
+        const userPets = getAllAnimals().filter(pet =>
+            user.pet_ids?.includes(pet.id)
+        );
+
+        return {
+            URL: `${API_URL}/${id}`,
+            message: `Fetched user by id: ${id}`,
+            user: formatedUser,
+            pets: userPets,
+        };
+    } catch (error) {
+        throw error;
+    }
     },
     updateUserById: async (id, userData) => {
         try {
