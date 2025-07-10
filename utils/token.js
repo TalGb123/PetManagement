@@ -13,6 +13,7 @@ export const verifyToken = async(token) => {
 let petfinderTokenData = null;
 export const fetchPetfinderToken = async () => {
     const url = 'https://api.petfinder.com/v2/oauth2/token';
+    
     const params = new URLSearchParams({
         grant_type: 'client_credentials',
         client_id: api_key,
@@ -24,10 +25,14 @@ export const fetchPetfinderToken = async () => {
         headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
         body: params.toString()
     });
-
-    if (!res.ok) throw new Error(`Token fetch failed: ${res.status}`);
+    
+    if (!res.ok) {
+        const errorText = await res.text();
+        console.log('Error response:', errorText);
+        throw new Error(`Token fetch failed: ${res.status} - ${errorText}`);
+    }
+    
     const data = await res.json();
-    console.log (`Token: ${data.access_token}`);
     
     petfinderTokenData = {
         access_token: data.access_token,

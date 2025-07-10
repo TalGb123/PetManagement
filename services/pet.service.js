@@ -19,15 +19,13 @@ export const PetService = {
     getAllAnimals : async () => {
         try {
             const token = await getPetfinderToken();
-            console.log(`Fetching all animals:`);
+            console.log(`Fetching all animals`);
             const res = await fetch(`${apiUrl}animals`, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
             });
             const data = await res.json();
-
-            console.log("API response:", data);
             
             if (!data.animals || !Array.isArray(data.animals) || data.animals.length === 0) {
                 return {
@@ -71,7 +69,6 @@ export const PetService = {
             });
             const data = await res.json();
 
-            console.log("breeds data", data);
             const breedsList = data.breeds.map(breed => breed.name);
             return {
                 message: "good",
@@ -97,7 +94,6 @@ export const PetService = {
             });
             const data = await res.json();
 
-            console.log("animal data", data);
             const formattedData = {
                 name: data.type.name,
                 coats: data.type.coats,
@@ -119,4 +115,44 @@ export const PetService = {
         }
 
     },
+
+    getAnimalById: async (id) => {
+        try {
+            const token = await getPetfinderToken();
+            console.log(`Fetching animal by id: ${id}`);
+            const res = await fetch(`${apiUrl}animals/${id}`, {
+                headers: {
+                    Authorization: `Bearer ${token}`,
+                },
+            });
+            const data = await res.json();
+
+            if (!data.animal) {
+                return {
+                    message: "error",
+                    error: "Animal not found"
+                }
+            }
+
+            const animal = data.animal;
+            const formattedAnimal = {
+                id: animal.id,
+                type: animal.type,
+                name: animal.name,
+                breed: formatBreeds(animal.breeds),
+                color: formatColors(animal.colors),
+            }
+            return {
+                message: "good",
+                data: formattedAnimal,
+            }
+        }
+        catch (error) {
+            console.error("Error fetching animal by id:", error);
+            return {
+                message: "error",
+                error: error.message,
+            }
+        }
+    }
 }

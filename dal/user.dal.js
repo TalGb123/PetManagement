@@ -1,80 +1,5 @@
-// import User from "../models/user.model.js";
-// import { createLogger } from "../utils/logger.js";
-
-
-// const logger = createLogger('USER-DAL');
-
-
-
-// export const userDal = {
-
-//     getAllUsers: async (user) => {
-//         try {
-//             logger.info('Fetching all users from the database');
-//             const users = await User.find();
-//             logger.info(`Retrieved ${users.length} users`);
-//             return users;
-
-//         } catch (error) {
-//             logger.error(`Error fetching all users: ${error.message}`);
-//             throw error
-//         }
-//     },
-//     getUserById: async (id) => {
-//         try {
-
-//             const user = await User.findById(id);
-//             return user;
-
-//         } catch (error) {
-//             throw error
-//         }
-//     },
-//     getUserByEmail: async (username, fromLogin = false) => {
-//         try {
-
-//             if (fromLogin)
-//                 return await User.findOne({ email: username }).select('+password');
-
-//             return await User.findOne({ email: username })
-
-//         } catch (error) {
-//             throw error
-//         }
-//     },
-//     updateUserById:async (id, userData) => {
-//         try {
-//             return await User.findByIdAndUpdate(
-//                 id ,
-//                 userData,   
-//             { new: true }
-//         );
-
-//         } catch (error) {
-//             logger.error(`Error updating user with ID ${id}: ${error.message}`);
-//             throw error
-//         }
-//     },
-//     deleteUserById: async (id) => {
-//         try {
-//             logger.info(`Deleting user with ID: ${id}`);
-//             const deletedUser = await User.findByIdAndDelete(id);
-//             logger.info(`User with ID: ${id} deleted successfully`);
-//             return deletedUser;
-//         } catch (error) {
-//             logger.error(`Error deleting user with ID ${id}: ${error.message}`);
-//             throw error;
-//         }
-//     }
-
-// } 
-// dal/user.dal.js
 import { createLogger } from "../utils/logger.js";
-import {
-  createUser,
-  getAllUsers,
-  findUserByEmail,
-} from "../models/user.model.js";
+import { createUser, getAllUsers, findUserByEmail } from "../models/user.model.js";
 
 const logger = createLogger("USER-DAL");
 
@@ -88,6 +13,17 @@ export const userDal = {
       logger.error(`Error fetching users: ${error.message}`);
       throw error;
     }
+  },
+
+  createUser: async (userData) => {
+      try {
+          logger.info('Creating user in DAL');
+          const result = createUser(userData);
+          return result;
+      } catch (error) {
+          logger.error(`Error creating user in DAL: ${error.message}`);
+          throw error;
+      }
   },
 
   getUserById: async (id) => {
@@ -131,6 +67,29 @@ export const userDal = {
       return deleted;
     } catch (error) {
       logger.error(`Error deleting user ${id}: ${error.message}`);
+      throw error;
+    }
+  },
+
+  addAnimalToUser: async (userId, animalId) => {
+    try {
+      const users = getAllUsers();
+      const user = users.find((u) => u.id === userId);
+      if (!user) return null;
+
+      // Initialize pet_ids array if it doesn't exist
+      if (!user.pet_ids) {
+        user.pet_ids = [];
+      }
+
+      // Check if animal is already added
+      if (!user.pet_ids.includes(animalId)) {
+        user.pet_ids.push(animalId);
+      }
+
+      return user;
+    } catch (error) {
+      logger.error(`Error adding animal to user ${userId}: ${error.message}`);
       throw error;
     }
   },

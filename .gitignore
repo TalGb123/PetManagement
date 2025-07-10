@@ -225,3 +225,6 @@ secrets/
 private/
 *.private
 *.secret 
+
+logs/
+*.log
